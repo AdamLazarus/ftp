@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane layoutX="0" layoutY="0" maxHeight="500.0" maxWidth="467.0" minHeight="458.0" minWidth="467.0" prefHeight="458.0" prefWidth="467.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FTPController">
+         <children>
+            <ListView fx:id="ftpItems" layoutX="248.0" layoutY="239.0" onMouseClicked="#handleServerListCellDoubleClick" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="userItems" layoutX="19.0" layoutY="239.0" onMouseClicked="#handleUserListCellDoubleClick" prefHeight="200.0" prefWidth="200.0" />
+            <TextField id="serverField" fx:id="serverField" layoutX="181.0" layoutY="14.0" />
+            <TextField id="portField" fx:id="portField" layoutX="181.0" layoutY="52.0" />
+            <TextField id="userField" fx:id="userField" layoutX="181.0" layoutY="90.0" />
+            <PasswordField id="passField" fx:id="passField" layoutX="181.0" layoutY="126.0" />
+            <Label layoutX="110.0" layoutY="19.0" text="Server:" />
+            <Label layoutX="127.0" layoutY="57.0" text="Port:" />
+            <Label layoutX="87.0" layoutY="95.0" text="Username:" />
+            <Label layoutX="87.0" layoutY="126.0" prefHeight="25.0" prefWidth="71.0" text="Password:" />
+            <Button id="connectButton" layoutX="195.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleConnectButtonAction" text="Connect" />
+      <CheckBox fx:id="hiddenItemsUser" layoutX="44.0" layoutY="215.0" mnemonicParsing="false" text="Show Hidden Items" />
+      <CheckBox fx:id="hiddenItemsFTP" layoutX="277.0" layoutY="215.0" mnemonicParsing="false" text="Show Hidden Items" />
+         </children>
+      </AnchorPane>
